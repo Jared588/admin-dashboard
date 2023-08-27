@@ -92,6 +92,11 @@
     margin-right: 1rem;
 }
 
+.header .user > button {
+    border: none;
+    cursor: pointer;
+}
+
 .main {
     display: grid;
     grid-column: 2 / 3;

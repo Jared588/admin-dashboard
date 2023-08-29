@@ -9,6 +9,7 @@
 :root {
     --main-color: rgb(33, 149, 226);
     --text-color: aliceblue;
+    --secondary-text-color: rgb(99, 99, 99);
     --main-font: 'Roboto', sans-serif;
 }
 .container {
@@ -169,10 +170,19 @@
 }
 
 .project .p-text {
-    padding: 0.8rem;
-    font-size: small;
+    padding: 1rem;
+    font-size: 14px;
     grid-column: 2 / 3;
     background-color: aliceblue;
+}
+
+.p-text > p {
+    color: var(--secondary-text-color);
+}
+
+.p-text > h1 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
 }
 
 .project .p-buttons {
@@ -185,4 +195,31 @@
 .p-buttons > button {
     padding: 1rem;
     border: none;
+}
+
+.side-content-container {
+    display: grid;
+    overflow: hidden;
+}
+
+.announcement-container,
+.trending-container {
+    display: grid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.announcement {
+    margin-bottom: 2rem;
+}
+
+.announcement > h1 {
+    font-size: 18px;
+    margin-bottom: 0.1rem;
+}
+
+.announcement > p {
+    color: var(--secondary-text-color);
 }

@@ -74,10 +74,12 @@
 
 #avatar {
     height: 5rem;
+    cursor: pointer;
 }
 
 #trending-avatar {
     height: 4rem;
+    cursor: pointer;
 }
 
 .header {
@@ -190,6 +192,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 0px solid black;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .project .p-text {
